@@ -96,7 +96,9 @@ POST:
     "command": "restart"
 }
 ```
-
+RESP:
+成功: 直接返回 wav 音频流， http code 200
+失败: 返回包含错误信息的 json, http code 400
 RESP: 无
 
 """
