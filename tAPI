@@ -23,7 +23,10 @@
 `-b` - `bert路径`
 
 ## 调用:
-
+mport torch
+import librosa
+import soundfile as sf
+from fastapi import FastAPI, Request, HTTPException
 ### 推理
 
 endpoint: `/`
@@ -103,6 +106,8 @@ RESP: 无
 
 """
 
+"restart": 重新运行
+"exit": 结束运行
 
 import argparse
 import os
